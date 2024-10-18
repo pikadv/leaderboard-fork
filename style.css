@@ -197,7 +197,6 @@
 
 .app-container {
   width: 80%;
-  max-width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,10 +204,13 @@
   padding: 1rem;
 }
 
-.app-image,
 .app-box,
 .app-box-grouped {
   width: 30%;
+}
+
+.app-img {
+  width: 40%;
 }
 
 .app-box {
@@ -216,7 +218,7 @@
 }
 
 .app-box-grouped {
-  translate: -4.5rem;
+  translate: -5.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
