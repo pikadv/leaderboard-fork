@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gilroy-Medium", sans-serif;
 }
 
 .container {
@@ -24,7 +25,6 @@
   gap: 6rem;
   justify-content: space-between;
   background-color: var(--primary-color);
-  font-family: "Gilroy-Medium", sans-serif;
   padding: 1rem 0;
 }
 
@@ -64,7 +64,6 @@
 .nav-link {
   text-decoration: none;
   color: var(--secondary-color);
-  font-family: inherit;
   padding: 0.5rem 1.5rem;
 }
 
@@ -88,8 +87,6 @@
   text-decoration: none;
   background: linear-gradient(180deg, #faa94d, #f8894b);
   padding: 1rem;
-  color: inherit;
-  font-family: inherit;
   border-radius: 12px;
   color: var(--primary-color);
 }
@@ -360,7 +357,7 @@
   width: 100%;
   height: calc(50px + 2rem);
   padding-bottom: 2rem;
-  border-bottom: var(--secondary-color) 1px solid;
+  border-bottom: var(--secondary-color) 1.5px solid;
 }
 
 .footer-container {
@@ -370,18 +367,64 @@
 }
 
 .tac-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  padding: 0 1rem;
 }
 
 .tac-text-left {
-  margin-left: 1rem;
+  width: 70%;
 }
 
 .tac-text-right {
-  width: 50%;
+  width: 30%;
   display: flex;
-  justify-content: space-evenly;
-  text-align: start;
+  justify-content: space-between;
   gap: 1em;
+}
+
+/* for studentcheckpage.html */
+
+.check-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.check-img,
+.check-inp-container {
+  width: 50%;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 12px;
+  border: var(--tertiary-color) 1px solid;
+}
+
+.input-box input {
+  width: 100%;
+  font-size: larger;
+  margin: 1rem;
+  border: none;
+  background: inherit;
+}
+
+.input-box input:focus {
+  outline: none;
+  border: none;
+}
+
+.input-box button {
+  background: none;
+  border: none;
+  margin: 1rem;
 }
