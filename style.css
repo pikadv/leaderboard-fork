@@ -197,6 +197,7 @@
 
 .app-container {
   width: 80%;
+  max-width: 950px;
   display: flex;
   justify-content: center;
   align-items: center;
