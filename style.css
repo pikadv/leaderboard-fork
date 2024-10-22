@@ -45,7 +45,7 @@ body {
   line-height: 1.6;
   background-color: var(--primary-bg-color);
   color: var(--dark-color);
-  min-height: 900px;
+  min-width: 900px;
 }
 
 h2 {
@@ -430,12 +430,13 @@ h2 {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  gap: 1rem;
 }
 
 .input-container {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border: var(--primary-color) 1px solid;
   border-radius: 12px;
@@ -455,14 +456,15 @@ h2 {
   width: min-content;
   border: none;
   background: none;
-}
-
-.input-container button:hover {
-  background: none;
+  padding: 0;
 }
 
 .input-container img {
   padding: 1rem;
+}
+
+.input-container button:hover {
+  background: none;
 }
 
 /* Login section */
