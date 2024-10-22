@@ -9,77 +9,96 @@
   <body>
     <div class="container">
       <header id="header">
-        <div class="nav-container">
-          <a class="logo" href="index.html">
-            <img class="logo" src="/images/logo-1.png" />
+        <div class="header-container">
+          <a href="index.html" class="logo-container">
+            <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
-          <ul class="nav-items">
-            <li class="nav-item">
-              <a href="#header" class="nav-link current-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#features" class="nav-link">Features</a>
-            </li>
-            <li class="nav-item">
-              <a href="#app" class="nav-link">App</a>
-            </li>
-            <li class="nav-item">
-              <a href="#reviews" class="nav-link">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
-          <a class="btn cta" href="studentcheckpage.html">Check Now</a>
+          <div class="nav-container">
+            <ul class="nav">
+              <li class="nav-items">
+                <a href="index.html#hero" class="nav-links">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#features" class="nav-links">Features</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#app" class="nav-links">App</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#reviews" class="nav-links">Reviews</a>
+              </li>
+              <li class="nav-items">
+                <a href="blog.html" class="nav-links">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cta-container">
+            <a href="studentcheckpage.html" class="cta btn">Check Now</a>
+          </div>
         </div>
       </header>
       <div id="hero">
         <div class="hero-container">
-          <div class="welcome-container">
-            <img class="welcome-img" src="/images/welcome-to-leaderboard.svg" />
-            <p class="p">
-              Welcome to LeaderBoard, the platform that helps you track your
-              academic progress and compare it with your peers.
+          <div class="hero-main">
+            <img
+              class="hero-title"
+              src="/img/welcome-to-leaderboard.svg"
+              alt="Welcome to LeaderBoard" />
+            <p class="hero-text">
+              Join the LeaderBoard community and track your progress with ease.
+              Stay motivated and achieve your goals with our comprehensive
+              tracking tools.
             </p>
           </div>
-          <div class="btns-container">
-            <a class="btn wide-btn" href="studentcheckpage.html">Check Now</a>
-            <a class="btn wide-btn sub-btn" href="#">Get the App</a>
+          <div class="hero-cta">
+            <a href="studentcheckpage.html" class="hero-btn btn">Check Now</a>
+            <a href="index.html#app" class="hero-btn btn btn-light"
+              >Get The App</a
+            >
           </div>
         </div>
       </div>
       <div id="features">
         <div class="features-container">
-          <h2 class="feature-title">Features</h2>
-          <div class="features-sub-container">
-            <div class="feature-panel">
-              <div class="feature-box feature-details">
-                <div class="feature-sub-box">
-                  <h2>Explore The Student Rankings</h2>
-                  <p>
-                    See how you rank among your peers in your class, department.
+          <h1 class="features-heading">Features</h1>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-box">
+                <div class="feature-texts">
+                  <h2 class="feature-title">Explore the student rankings</h2>
+                  <p class="feature-sub-title">
+                    Our detailed ranking system provides insights into your
+                    strengths and areas for improvement.
                   </p>
                 </div>
-                <a class="btn" href="#">Learn more</a>
+                <a class="feature-cta cta btn" href="blog.html">Learn more</a>
               </div>
-              <img
-                class="feature-box feature-img"
-                src="/images/student-image.png" />
+              <div class="feature-box">
+                <img
+                  class="feature-img"
+                  src="img/student-image.png"
+                  alt="Students checking their rankings" />
+              </div>
             </div>
-            <div class="feature-panel">
-              <img
-                class="feature-box feature-img"
-                src="/images/faculty-image.png" />
-              <div class="feature-box feature-details">
-                <div class="feature-sub-box">
-                  <h2>Faculty Access, More Student Details</h2>
-                  <p>
+            <div class="feature-item">
+              <div class="feature-box">
+                <img
+                  class="feature-img"
+                  src="img/faculty-image.png"
+                  alt="Faculty member checking student rankings" />
+              </div>
+              <div class="feature-box">
+                <div class="feature-texts">
+                  <h2 class="feature-title">
+                    Faculty Access, More Student Details
+                  </h2>
+                  <p class="feature-sub-title">
                     Faculty members can access detailed student profiles, track
                     progress, and provide personalized feedback to help students
                     achieve their academic goals.
                   </p>
                 </div>
-                <a class="btn" href="#">Learn more</a>
+                <a class="feature-cta cta btn" href="blog.html">Learn more</a>
               </div>
             </div>
           </div>
@@ -87,119 +106,118 @@
       </div>
       <div id="app">
         <div class="app-container">
-          <div class="app-box">
-            <h2 class="app-sub-title-dark">Faster</h2>
+          <div class="app-box app-section-dark">
+            <h2 class="app-heading">Faster</h2>
           </div>
-          <img class="app-img" src="/images/iphone-13.png" />
-          <div class="app-box-grouped">
-            <h2 class="app-sub-title-light">With App</h2>
+          <div class="app-box">
+            <img
+              class="app-img"
+              src="img/iphone-13.png"
+              alt="LeaderBoard app running on iPhone" />
+          </div>
+          <div class="app-box app-section-light">
+            <h2 class="app-heading">With App</h2>
             <div class="app-sub-box">
-              <p class="app-text">
-                Get real-time updates on your academic progress.
+              <p class="app-description">
+                Our app is designed to be faster and more efficient.
               </p>
-              <img class="app-social-links" src="/images/frame-23.png" />
+              <div class="app-socials">
+                <a href="blog.html" class="social-link">
+                  <img
+                    src="img/app-store.svg"
+                    alt="Download on the App Store" />
+                </a>
+                <a href="blog.html" class="social-link">
+                  <img src="img/google-play.svg" alt="Get it on Google Play" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div id="reviews">
         <div class="reviews-container">
-          <div class="review-title">
-            <h2 class="review-title-text">User Reviews</h2>
-            <img class="review-arrow" src="/images/left-and-right-arrow.png" />
-          </div>
-          <div class="review-panel">
-            <div class="review">
-              <div class="review-box">
-                <img class="review-image" src="/images/1.svg" />
-                <p class="review-text">
-                  LeaderBoard has completely transformed the way I track my
-                  academic progress. The real-time updates and detailed insights
-                  are incredibly helpful.
-                </p>
-              </div>
-              <p class="reviewer">Alex Johnson</p>
-            </div>
-            <div class="review">
-              <div class="review-box">
-                <img class="review-image" src="/images/1.svg" />
-                <p class="review-text">
-                  LeaderBoard has completely transformed the way I track my
-                  academic progress. The real-time updates and detailed insights
-                  are incredibly helpful.
-                </p>
-              </div>
-              <p class="reviewer">James Smith</p>
-            </div>
-            <div class="review-open">
-              <div class="reviewer-img"></div>
-              <div class="review">
-                <div class="review-box">
-                  <img class="review-image" src="/images/1.svg" />
-                  <p class="review-text">
-                    LeaderBoard has completely transformed the way I track my
-                    academic progress. The real-time updates and detailed
-                    insights are incredibly helpful.
-                  </p>
-                </div>
-                <p class="reviewer">John Connor</p>
-              </div>
-            </div>
-            <div class="review">
-              <img class="review-image" src="/images/1.svg" />
+          <h1 class="reviews-heading">Reviews</h1>
+          <div class="reviews-grid">
+            <div class="review-item">
+              <img src="img/quote-1.svg" alt="Big quotation" />
               <p class="review-text">
-                LeaderBoard has completely transformed the way I track my
-                academic progress. The real-time updates and detailed insights
-                are incredibly helpful.
+                "LeaderBoard has completely transformed the way I track my
+                progress. The insights are invaluable!"
               </p>
-              <p class="reviewer">Alexa</p>
+              <p class="review-author">- Alex Johnson</p>
+            </div>
+            <div class="review-item">
+              <img src="img/quote-1.svg" alt="Big quotation" />
+              <p class="review-text">
+                "I love the app! It's so easy to use and helps me stay motivated
+                to achieve my goals."
+              </p>
+              <p class="review-author">- Maria Garcia</p>
+            </div>
+            <div class="review-item">
+              <img src="img/quote-1.svg" alt="Big quotation" />
+              <p class="review-text">
+                "The ranking system is fantastic. It really pushes me to improve
+                and do better each day."
+              </p>
+              <p class="review-author">- Liam Smith</p>
+            </div>
+            <div class="review-item">
+              <img src="img/quote-1.svg" alt="Big quotation" />
+              <p class="review-text">
+                "A must-have for anyone serious about tracking their progress.
+                Highly recommend!"
+              </p>
+              <p class="review-author">- Emma Brown</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="news-letter">
-        <div class="nl-container">
-          <h2 class="nl-heading">Check your Ranking Now</h2>
-          <a class="btn btn-light" href="studentcheckpage.html">Check Now</a>
+      <div id="newsletter">
+        <div class="newsletter-container">
+          <h2 class="newsletter-heading">Check your ranking now!</h2>
+          <a href="studentcheckpage.html" class="cta btn">Check Now</a>
         </div>
       </div>
       <footer id="footer">
         <div class="footer-container">
+          <a href="index.html" class="logo-container">
+            <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
+          </a>
           <div class="nav-container">
-            <a class="logo" href="index.html">
-              <img class="logo" src="/images/logo-1.png" />
-            </a>
-            <ul class="nav-items">
-              <li class="nav-item">
-                <a href="#header" class="nav-link current-link">Home</a>
+            <ul class="nav">
+              <li class="nav-items">
+                <a href="index.html#features" class="nav-links">Features</a>
               </li>
-              <li class="nav-item">
-                <a href="#features" class="nav-link">Features</a>
+              <li class="nav-items">
+                <a href="index.html#app" class="nav-links">App</a>
               </li>
-              <li class="nav-item">
-                <a href="#app" class="nav-link">App</a>
+              <li class="nav-items">
+                <a href="index.html#reviews" class="nav-links">Reviews</a>
               </li>
-              <li class="nav-item">
-                <a href="#reviews" class="nav-link">Reviews</a>
+              <li class="nav-items">
+                <a href="blog.html#contact" class="nav-links">Contact</a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+              <li class="nav-items">
+                <a href="blog.html#support" class="nav-links">Support</a>
               </li>
             </ul>
-            <a class="btn cta" href="studentcheckpage.html">Check Now</a>
           </div>
-          <div class="tac">
-            <div class="tac-container">
-              <div class="tac-text-left">@LeaderBoard. All Rights Reserved</div>
-              <div class="tac-text-right">
-                <div class="tac-text-wrapper">Terms and Conditions</div>
-                <div class="tac-text-wrapper">Privacy Policy</div>
-              </div>
-            </div>
+          <div class="cta-container">
+            <a href="index.html#app" class="cta btn">Get the app</a>
+          </div>
+        </div>
+        <div class="footer-tac">
+          <p class="footer-text">
+            &copy; 2023 LeaderBoard. All rights reserved.
+          </p>
+          <div class="tac-box">
+            <a href="blog.html" class="tac-link">Terms and Conditions</a>
+            <a href="blog.html" class="tac-link">Privacy Policy</a>
           </div>
         </div>
       </footer>
     </div>
   </body>
-  <script type="module" src="/main.js"></script>
 </html>

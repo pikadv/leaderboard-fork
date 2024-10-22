@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LeaderBoard - Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="hero">
+        <div class="hero-container">
+          <div class="header-container">
+            <a href="index.html" class="logo-container">
+              <img
+                class="logo-img"
+                src="img/logo-1.png"
+                alt="LeaderBoard Logo" />
+            </a>
+          </div>
+          <div class="hero-login">
+            <form class="login-container" action="/login" method="post">
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                  required />
+                <img src="img/vector.svg" alt="User Icon" class="input-icon" />
+              </div>
+              <div class="input-container">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required />
+                <img
+                  src="img/vector-1.svg"
+                  alt="Password Icon"
+                  class="input-icon" />
+              </div>
+              <a class="forgot-pass" href="/forgot-password">
+                Forgot Password?
+              </a>
+              <button class="btn" type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+        <footer id="footer">
+          <div class="footer-tac">
+            <p class="footer-text">
+              &copy; 2023 LeaderBoard. All rights reserved.
+            </p>
+            <div class="tac-box">
+              <p class="tac-link">Terms and Conditions</p>
+              <p class="tac-link">Privacy Policy</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
