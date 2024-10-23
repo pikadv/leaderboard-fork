@@ -438,7 +438,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: var(--primary-color) 1px solid;
+  border: var(--dark-gray-color) 1px solid;
   border-radius: 12px;
 }
 
