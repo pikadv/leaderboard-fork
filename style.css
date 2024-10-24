@@ -581,7 +581,6 @@ h2 {
 .form-input-section {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .form-button-section {
@@ -589,10 +588,13 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .form-input-section label {
+  display: block;
   font-weight: bold;
+  margin-top: 1rem;
 }
 
 .form-input-section input {
@@ -605,7 +607,7 @@ h2 {
   max-width: fit-content;
 }
 
-.form-button-section .btn:first-child {
+.btn-light {
   background: none;
   color: var(--light-gray-color);
   border: var(--light-gray-color) 1px solid;
