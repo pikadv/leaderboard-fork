@@ -577,6 +577,7 @@ h2 {
   justify-content: space-between;
   padding: 1rem;
   font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .form-input-section {
@@ -654,4 +655,10 @@ h2 {
 
 .ranking-table td {
   color: var(--dark-color);
+}
+
+/* Profile Page section */
+.profile-container img {
+  width: 80%;
+  margin: auto;
 }
