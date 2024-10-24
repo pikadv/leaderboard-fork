@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>LeaderBoard - Faculty Page</title>
+    <title>LeaderBoard - Placement Page - Student</title>
   </head>
   <body>
     <div class="container">
@@ -14,29 +14,41 @@
             <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
           <div class="cta-container">
-            <a href="leaderboard.html" class="cta btn">LeaderBoard</a>
+            <a href="login.html" class="cta btn">Faculty Login</a>
           </div>
         </div>
       </header>
       <div id="hero">
         <div class="hero-container">
           <div class="hero-main">
-            <img
-              class="hero-title"
-              src="/img/check-student-placement.png"
-              alt="Check Student placement" />
-          </div>
-          <div class="hero-input">
-            <form class="input-container" action="placementpage-faculty.html">
-              <input
-                type="text"
-                name="student-id"
-                id="student-id"
-                placeholder="Enter Student ID" />
-              <button type="submit" class="hero-btn btn">
-                <img src="img/search-icon.svg" alt="Search Icon" />
-              </button>
-            </form>
+            <div class="hero-title">
+              <div class="progress-section">
+                <img
+                  class="progress-circle"
+                  src="img/progress.svg"
+                  alt="Shows progress" />
+                <img
+                  class="progress-background"
+                  src="img/background.svg"
+                  alt="Shows progress" />
+                <div class="rank-section">
+                  <p class="rank-number">
+                    <span class="current-rank">1</span>
+                    <span class="total-rank">/50</span>
+                  </p>
+                  <div class="rank-details">
+                    <p class="rank-text">
+                      <span class="span-light">CGPA:</span>
+                      <span class="span-accent">3.99</span>
+                    </p>
+                    <a class="rank-profile-link" href="profilepage.html"
+                      >See Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-back" href="/studentcheckpage.html">Go back</a>
+            </div>
           </div>
         </div>
       </div>
