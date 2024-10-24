@@ -52,6 +52,10 @@ h2 {
   font-weight: bold;
 }
 
+.underline {
+  border-bottom: var(--light-gray-color) 1px solid;
+}
+
 .btn {
   min-width: max-content;
   display: block;
@@ -95,7 +99,8 @@ h2 {
   width: 100%;
   margin: 0 auto;
   min-width: 900px;
-  min-height: fit-content;
+  height: fit-content;
+  min-height: 100vh;
 }
 
 .header-container,
@@ -465,14 +470,10 @@ h2 {
   font-size: larger;
 }
 
-.input-container button {
+.input-container .btn {
   width: min-content;
   border: none;
   background: none;
-  padding: 0;
-}
-
-.input-container img {
   padding: 1rem;
 }
 
@@ -495,7 +496,7 @@ h2 {
   text-decoration: none;
 }
 
-.login-container .btn {
+.login-btn {
   padding: 1rem;
 }
 
@@ -561,4 +562,93 @@ h2 {
 .btn-back:hover {
   background: var(--dark-gray-color);
   color: var(--light-color);
+}
+
+/* Ranking section */
+.ranking-form {
+  text-align: left;
+  width: 100%;
+  color: var(--dark-color);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.form-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-input-section label {
+  font-weight: bold;
+}
+
+.form-input-section input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.form-button-section .btn {
+  padding: 1rem 4rem;
+  max-width: fit-content;
+}
+
+.form-button-section .btn:first-child {
+  background: none;
+  color: var(--light-gray-color);
+  border: var(--light-gray-color) 1px solid;
+}
+
+/* Ranking LeaderBoard */
+.leaderboard-container {
+  width: 100%;
+  align-items: start;
+  gap: 0;
+  margin-bottom: 2rem;
+}
+
+.ranking-form {
+  gap: 0;
+}
+
+/* Ranking-table styling */
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.ranking-table th,
+.ranking-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+.ranking-table th {
+  font-weight: bold;
+}
+
+.ranking-table tr:nth-child(even) {
+  background-color: var(--territorial-color);
+}
+
+.ranking-table tr:hover {
+  background-color: var(--light-gray-color);
+}
+
+.ranking-table td {
+  color: var(--dark-color);
 }

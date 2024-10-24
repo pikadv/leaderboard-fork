@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>LeaderBoard - Faculty Page</title>
+    <title>LeaderBoard - Filter</title>
   </head>
   <body>
     <div class="container">
@@ -14,30 +14,57 @@
             <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
           <div class="cta-container">
-            <a href="leaderboardfilter.html" class="cta btn">LeaderBoard</a>
+            <a href="login.html" class="cta btn">Faculty Login</a>
           </div>
         </div>
       </header>
       <div id="hero">
         <div class="hero-container">
-          <div class="hero-main">
-            <img
-              class="hero-title"
-              src="/img/check-student-placement.png"
-              alt="Check Student placement" />
-          </div>
-          <div class="hero-input">
-            <form class="input-container" action="placementpage-faculty.html">
-              <input
-                type="text"
-                name="student-id"
-                id="student-id"
-                placeholder="Enter Student ID" />
-              <button type="submit" class="hero-btn btn">
-                <img src="img/search-icon.svg" alt="Search Icon" />
-              </button>
-            </form>
-          </div>
+          <form class="hero-main ranking-form" action="leaderboard.html">
+            <div class="form-header underline">
+              <p>Rankings</p>
+            </div>
+            <div class="form-input-section">
+              <div class="form-input-group">
+                <label for="batch">Batch:</label>
+                <div class="input-container">
+                  <img
+                    class="btn form-input-icon"
+                    src="img/search-icon.svg"
+                    alt="Search Icon" />
+                  <input type="text" id="batch" name="batch" required />
+                </div>
+              </div>
+              <div class="form-input-group">
+                <label for="department">Department:</label>
+                <div class="input-container">
+                  <img
+                    class="btn form-input-icon"
+                    src="img/search-icon.svg"
+                    alt="Search Icon" />
+                  <input
+                    type="text"
+                    id="department"
+                    name="department"
+                    required />
+                </div>
+              </div>
+              <div class="form-input-group">
+                <label for="section">Section:</label>
+                <div class="input-container">
+                  <img
+                    class="btn form-input-icon"
+                    src="img/search-icon.svg"
+                    alt="Search Icon" />
+                  <input type="text" id="section" name="section" required />
+                </div>
+              </div>
+            </div>
+            <div class="form-button-section">
+              <button type="reset" class="btn cancel-btn">Cancel</button>
+              <button type="submit" class="btn search-btn">Search</button>
+            </div>
+          </form>
         </div>
       </div>
       <footer id="footer">
