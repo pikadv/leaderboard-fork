@@ -430,6 +430,7 @@ h2 {
   gap: 1rem;
   padding: 2rem 1rem;
   border-top: var(--dark-color) 1px solid;
+  color: var(--dark-gray-color);
 }
 
 .tac-box {
