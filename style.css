@@ -56,6 +56,11 @@ h2 {
   border-bottom: var(--light-gray-color) 1px solid;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 .btn {
   min-width: max-content;
   display: block;
@@ -72,7 +77,6 @@ h2 {
   color: var(--light-color);
   font-weight: bold;
   text-align: center;
-  cursor: pointer;
   transition: scale 0.1s ease;
 }
 
@@ -621,6 +625,7 @@ h2 {
   align-items: start;
   gap: 0;
   margin-bottom: 2rem;
+  max-width: 80%;
 }
 
 .ranking-form {
@@ -628,25 +633,29 @@ h2 {
 }
 
 /* Ranking-table styling */
+
 .ranking-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 1rem;
   text-align: left;
+  font-weight: bold;
+}
+
+.ranking-table tr {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ranking-table th,
 .ranking-table td {
+  flex: 1;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem;
   border-bottom: 1px solid var(--light-gray-color);
-}
-
-.ranking-table th {
-  font-weight: bold;
-}
-
-.ranking-table tr:nth-child(even) {
-  background-color: var(--territorial-color);
 }
 
 .ranking-table tr:hover {
@@ -657,8 +666,65 @@ h2 {
   color: var(--dark-color);
 }
 
+.ranking-table td p:nth-child(2) {
+  color: var(--dark-gray-color);
+  font-weight: normal;
+}
+
 /* Profile Page section */
 .profile-container img {
   width: 80%;
   margin: auto;
+}
+
+.ranking-table td p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ranking-table .crown {
+  width: 1rem;
+  margin-left: 2rem;
+}
+
+.ranking-table .comment {
+  width: 1rem;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.accent-orange {
+  background: #f8894b1a;
+  color: #f8894b;
+}
+
+.accent-blue {
+  background: #0d77d31a;
+  color: #0d77d3;
+}
+
+.accent-green {
+  background: #2885561a;
+  color: #288556;
+}
+
+.accent-gray {
+  background: #7a7a7a1a;
+  color: #7a7a7a;
+}
+
+tr td:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+tr td:last-child button {
+  border: none;
+  background: none;
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  font-weight: bold;
 }
