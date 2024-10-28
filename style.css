@@ -56,6 +56,8 @@ h2 {
   border-bottom: var(--light-gray-color) 1px solid;
 }
 
+/* ---------------------------buttons------------------------------ */
+
 button,
 a {
   cursor: pointer;
@@ -91,6 +93,31 @@ a {
 
 .btn:active {
   scale: 0.9;
+}
+
+.btn-light {
+  background: var(--light-color);
+  color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+}
+
+.btn-light:hover {
+  background: var(--light-color);
+}
+
+.btn-back {
+  background: none;
+  color: var(--dark-gray-color);
+  border: var(--dark-gray-color) 1px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  width: max-content;
+  margin: 2rem auto;
+}
+
+.btn-back:hover {
+  background: var(--dark-gray-color);
+  color: var(--light-color);
 }
 
 /* Containers for the LeaderBoard */
@@ -155,6 +182,7 @@ a {
   align-items: center;
   width: fit-content;
   height: 100%;
+  gap: 1rem;
 }
 
 .logo-img {
@@ -221,16 +249,6 @@ a {
   gap: 1rem;
   width: 100%;
   padding: 0 2rem;
-}
-
-.btn-light {
-  background: var(--light-color);
-  color: var(--primary-color);
-  border: var(--primary-color) 1px solid;
-}
-
-.btn-light:hover {
-  background: var(--light-color);
 }
 
 /* Features section */
@@ -349,14 +367,9 @@ a {
   padding: 0.7rem;
   border-radius: 12px;
   background-color: var(--light-color);
-}
-
-.app-img,
-.app-socials img {
   transition: scale 0.1s ease;
 }
 
-.app-img:hover,
 .app-socials img:hover {
   scale: 1.05;
 }
@@ -448,7 +461,7 @@ a {
 }
 
 /* Input section */
-.hero-input {
+.hero-input-section {
   width: 100%;
   display: flex;
   align-items: center;
@@ -554,21 +567,6 @@ a {
   font-weight: bold;
 }
 
-.btn-back {
-  background: none;
-  color: var(--dark-gray-color);
-  border: var(--dark-gray-color) 1px solid;
-  padding: 0.5rem 1rem;
-  border-radius: 24px;
-  width: max-content;
-  margin: 2rem auto;
-}
-
-.btn-back:hover {
-  background: var(--dark-gray-color);
-  color: var(--light-color);
-}
-
 /* Ranking section */
 .ranking-form {
   text-align: left;
@@ -611,12 +609,6 @@ a {
 .form-button-section .btn {
   padding: 1rem 4rem;
   max-width: fit-content;
-}
-
-.btn-light {
-  background: none;
-  color: var(--light-gray-color);
-  border: var(--light-gray-color) 1px solid;
 }
 
 /* Ranking LeaderBoard */
