@@ -686,7 +686,7 @@ tbody {
 .ranking-table td p:nth-child(2) {
   color: var(--dark-gray-color);
   font-weight: normal;
-  width: 100%;
+  width: max-content;
 }
 
 .profile-container img {
