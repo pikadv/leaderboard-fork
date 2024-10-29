@@ -40,6 +40,17 @@
   font-family: inherit;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /* Basic body styling */
 body {
   font-family: "Gilroy", Helvetica, sans-serif;
@@ -509,13 +520,14 @@ a {
   gap: 1rem;
 }
 
-.forgot-pass {
+.login-form-text {
   color: var(--dark-gray-color);
   text-decoration: none;
 }
 
 .login-btn {
   padding: 1rem;
+  font-size: inherit;
 }
 
 /* Placement page */

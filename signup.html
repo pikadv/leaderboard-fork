@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>LeaderBoard - Faculty Login</title>
+    <title>LeaderBoard - Student Login</title>
   </head>
   <body>
     <div class="container">
@@ -18,35 +18,42 @@
       <div id="hero">
         <div class="hero-container">
           <div class="hero-login">
-            <form class="login-container" action="facultypage.html">
+            <form class="login-container" action="#">
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="student-id"
+                  name="student-id"
+                  placeholder="Student ID"
+                  required />
+              </div>
+              <div class="input-container">
+                <input
+                  type="number"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder="Phone No."
+                  required />
+              </div>
               <div class="input-container">
                 <input
                   type="text"
                   id="username"
                   name="username"
-                  placeholder="Username"
+                  placeholder="Set Username"
                   required />
-                <img
-                  src="img/vector.svg"
-                  alt="User Icon"
-                  class="input-icon btn" />
               </div>
               <div class="input-container">
                 <input
                   type="password"
                   id="password"
                   name="password"
-                  placeholder="Password"
+                  placeholder="Set Password"
                   required />
-                <img
-                  src="img/vector-1.svg"
-                  alt="Password Icon"
-                  class="input-icon btn" />
               </div>
-              <a class="forgot-pass" href="/forgot-password">
-                Forgot Password?
-              </a>
-              <button class="btn login-btn" type="submit">Login</button>
+              <button class="btn login-btn" type="submit">
+                Create Account
+              </button>
             </form>
           </div>
         </div>
