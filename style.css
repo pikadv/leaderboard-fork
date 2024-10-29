@@ -1,5 +1,4 @@
 /* Custom font */
-
 @font-face {
   font-family: "Gilroy";
   src: url("/font/Gilroy-Regular.ttf") format("truetype");
@@ -68,7 +67,6 @@ h2 {
 }
 
 /* ---------------------------buttons------------------------------ */
-
 button,
 a {
   cursor: pointer;
@@ -132,7 +130,6 @@ a {
 }
 
 /* Containers for the LeaderBoard */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -174,7 +171,6 @@ a {
 }
 
 /* Header & Footer Nav */
-
 #header .header-container,
 #footer .footer-container {
   font-weight: bold;
@@ -224,7 +220,6 @@ a {
 }
 
 /* Hero styling */
-
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -263,7 +258,6 @@ a {
 }
 
 /* Features section */
-
 .features-container {
   display: flex;
   flex-direction: column;
@@ -310,7 +304,6 @@ a {
 }
 
 /* App section */
-
 #app {
   background: linear-gradient(
     180deg,
@@ -446,7 +439,6 @@ a {
 }
 
 /* Footer section */
-
 #footer {
   background-color: var(--territorial-color);
 }
@@ -511,7 +503,6 @@ a {
 }
 
 /* Login section */
-
 .login-container {
   display: flex;
   flex-direction: column;
@@ -531,7 +522,6 @@ a {
 }
 
 /* Placement page */
-
 .progress-section {
   flex-direction: column;
   position: relative;
@@ -637,7 +627,6 @@ a {
 }
 
 /* Ranking-table styling */
-
 .ranking-table {
   width: 100%;
   border-collapse: collapse;
@@ -646,89 +635,67 @@ a {
   font-weight: bold;
 }
 
-.ranking-table tr {
-  display: flex;
-  flex-wrap: wrap;
+thead,
+tbody {
+  width: 100%;
 }
 
-.ranking-table th,
-.ranking-table td {
-  flex: 1;
+.ranking-table tr {
+  width: 100%;
   display: flex;
-  align-items: left;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
-  border-bottom: 1px solid var(--light-gray-color);
+  flex-wrap: wrap;
 }
 
 .ranking-table tr:hover {
   background-color: var(--light-gray-color);
 }
 
+.ranking-table th,
+.ranking-table td {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+.ranking-table th:nth-child(2),
+.ranking-table td:nth-child(2) {
+  flex: 1;
+}
+
+.ranking-table td:nth-child(2) p {
+  justify-content: left;
+}
+
 .ranking-table td {
   color: var(--dark-color);
+}
+
+.ranking-table td p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
 }
 
 .ranking-table td p:nth-child(2) {
   color: var(--dark-gray-color);
   font-weight: normal;
+  width: 100%;
 }
 
-/* Profile Page section */
 .profile-container img {
   width: 80%;
   margin: auto;
 }
 
-.ranking-table td p {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .ranking-table .crown {
   width: 1rem;
-  margin-left: 2rem;
-}
-
-.ranking-table .comment {
-  width: 1rem;
-  width: max-content;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-}
-
-.accent-orange {
-  background: #f8894b1a;
-  color: #f8894b;
-}
-
-.accent-blue {
-  background: #0d77d31a;
-  color: #0d77d3;
-}
-
-.accent-green {
-  background: #2885561a;
-  color: #288556;
-}
-
-.accent-gray {
-  background: #7a7a7a1a;
-  color: #7a7a7a;
-}
-
-tr td:last-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-tr td:last-child button {
-  border: none;
-  background: none;
-  color: var(--dark-color);
-  font-size: 1.8rem;
-  font-weight: bold;
+  position: absolute;
+  translate: -200%;
 }
