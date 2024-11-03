@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style-global.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>LeaderBoard</title>
   </head>
   <body>
     <div class="container">
       <header id="header">
-        <div class="header-container">
+        <div class="section-container header-container">
           <a href="index.html" class="logo-container">
             <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
@@ -38,151 +37,168 @@
           </div>
         </div>
       </header>
-      <div id="hero">
-        <div class="hero-container">
-          <div class="hero-main">
-            <img
-              class="hero-title"
-              src="/img/welcome-to-leaderboard.svg"
-              alt="Welcome to LeaderBoard" />
-            <p class="hero-text">
-              Join the LeaderBoard community and track your progress with ease.
-              Stay motivated and achieve your goals with our comprehensive
-              tracking tools.
-            </p>
+      <main id="main">
+        <div id="hero">
+          <div class="section-container hero-container">
+            <div class="hero-main">
+              <img
+                class="hero-title"
+                src="/img/welcome-to-leaderboard.svg"
+                alt="Welcome to LeaderBoard" />
+              <p class="hero-text">
+                Join the LeaderBoard community and track your progress with
+                ease. Stay motivated and achieve your goals with our
+                comprehensive tracking tools.
+              </p>
+            </div>
+            <div class="hero-cta">
+              <a href="studentcheckpage.html" class="hero-btn btn">Check Now</a>
+              <a href="index.html#app" class="hero-btn btn btn-light"
+                >Get The App</a
+              >
+            </div>
           </div>
-          <div class="hero-cta">
-            <a href="studentcheckpage.html" class="hero-btn btn">Check Now</a>
-            <a href="index.html#app" class="hero-btn btn btn-light"
-              >Get The App</a
+        </div>
+        <div id="features">
+          <div class="section-container features-container">
+            <h2 class="features-heading">Features</h2>
+            <div class="features-grid">
+              <div class="feature-item">
+                <div class="feature-box">
+                  <div class="feature-texts">
+                    <h2 class="feature-title">Explore the student rankings</h2>
+                    <p class="feature-sub-title">
+                      Our detailed ranking system provides insights into your
+                      strengths and areas for improvement.
+                    </p>
+                  </div>
+                  <a class="feature-cta cta btn" href="blog.html">Learn more</a>
+                </div>
+                <div class="feature-box">
+                  <img
+                    class="feature-img"
+                    src="img/student-image.png"
+                    alt="Students checking their rankings" />
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-box">
+                  <img
+                    class="feature-img"
+                    src="img/faculty-image.png"
+                    alt="Faculty member checking student rankings" />
+                </div>
+                <div class="feature-box">
+                  <div class="feature-texts">
+                    <h2 class="feature-title">
+                      Faculty Access, More Student Details
+                    </h2>
+                    <p class="feature-sub-title">
+                      Faculty members can access detailed student profiles,
+                      track progress, and provide personalized feedback.
+                    </p>
+                  </div>
+                  <a class="feature-cta cta btn" href="blog.html">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="app">
+          <div class="section-container app-container">
+            <div class="app-box app-section-dark">
+              <h2 class="app-heading">Faster</h2>
+            </div>
+            <div class="app-box app-section-logo">
+              <img
+                class="app-img"
+                src="img/iphone-13.png"
+                alt="LeaderBoard app running on iPhone" />
+            </div>
+            <div class="app-box app-section-light">
+              <h2 class="app-heading">With App</h2>
+              <div class="app-sub-box">
+                <p class="app-description">
+                  Our app is designed to be faster and more efficient.
+                </p>
+                <div class="app-socials">
+                  <a href="blog.html" class="social-link">
+                    <img
+                      src="img/app-store.svg"
+                      alt="Download on the App Store" />
+                  </a>
+                  <a href="blog.html" class="social-link">
+                    <img
+                      src="img/google-play.svg"
+                      alt="Get it on Google Play" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="reviews">
+          <div class="section-container reviews-container">
+            <h2 class="reviews-heading">Reviews</h2>
+            <div class="reviews-grid">
+              <div class="review-item">
+                <p class="review-text">
+                  <img
+                    class="quotation-icon"
+                    src="img/quote-1.svg"
+                    alt="Big quotation" />
+                  "LeaderBoard has completely transformed the way I track my
+                  progress. The insights are invaluable!"
+                </p>
+                <p class="review-author">- Alex Johnson</p>
+              </div>
+              <div class="review-item">
+                <p class="review-text">
+                  <img
+                    class="quotation-icon"
+                    src="img/quote-1.svg"
+                    alt="Big quotation" />
+                  "I love the app! It's so easy to use and helps me stay
+                  motivated to achieve my goals."
+                </p>
+                <p class="review-author">- Maria Garcia</p>
+              </div>
+              <div class="review-item">
+                <p class="review-text">
+                  <img
+                    class="quotation-icon"
+                    src="img/quote-1.svg"
+                    alt="Big quotation" />
+                  "The ranking system is fantastic. It really pushes me to
+                  improve and do better each day."
+                </p>
+                <p class="review-author">- Liam Smith</p>
+              </div>
+              <div class="review-item">
+                <p class="review-text">
+                  <img
+                    class="quotation-icon"
+                    src="img/quote-1.svg"
+                    alt="Big quotation" />
+                  "A must-have for anyone serious about tracking their progress.
+                  Highly recommend!"
+                </p>
+                <p class="review-author">- Emma Brown</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="newsletter">
+          <div class="section-container newsletter-container">
+            <h2 class="newsletter-heading">Check your ranking now!</h2>
+            <a href="studentcheckpage.html" class="cta btn btn-light"
+              >Check Now</a
             >
           </div>
         </div>
-      </div>
-      <div id="features">
-        <div class="features-container">
-          <h1 class="features-heading">Features</h1>
-          <div class="features-grid">
-            <div class="feature-item">
-              <div class="feature-box">
-                <div class="feature-texts">
-                  <h2 class="feature-title">Explore the student rankings</h2>
-                  <p class="feature-sub-title">
-                    Our detailed ranking system provides insights into your
-                    strengths and areas for improvement.
-                  </p>
-                </div>
-                <a class="feature-cta cta btn" href="blog.html">Learn more</a>
-              </div>
-              <div class="feature-box">
-                <img
-                  class="feature-img"
-                  src="img/student-image.png"
-                  alt="Students checking their rankings" />
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-box">
-                <img
-                  class="feature-img"
-                  src="img/faculty-image.png"
-                  alt="Faculty member checking student rankings" />
-              </div>
-              <div class="feature-box">
-                <div class="feature-texts">
-                  <h2 class="feature-title">
-                    Faculty Access, More Student Details
-                  </h2>
-                  <p class="feature-sub-title">
-                    Faculty members can access detailed student profiles, track
-                    progress, and provide personalized feedback to help students
-                    achieve their academic goals.
-                  </p>
-                </div>
-                <a class="feature-cta cta btn" href="blog.html">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="app">
-        <div class="app-container">
-          <div class="app-box app-section-dark">
-            <h2 class="app-heading">Faster</h2>
-          </div>
-          <div class="app-box">
-            <img
-              class="app-img"
-              src="img/iphone-13.png"
-              alt="LeaderBoard app running on iPhone" />
-          </div>
-          <div class="app-box app-section-light">
-            <h2 class="app-heading">With App</h2>
-            <div class="app-sub-box">
-              <p class="app-description">
-                Our app is designed to be faster and more efficient.
-              </p>
-              <div class="app-socials">
-                <a href="blog.html" class="social-link">
-                  <img
-                    src="img/app-store.svg"
-                    alt="Download on the App Store" />
-                </a>
-                <a href="blog.html" class="social-link">
-                  <img src="img/google-play.svg" alt="Get it on Google Play" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="reviews">
-        <div class="reviews-container">
-          <h1 class="reviews-heading">Reviews</h1>
-          <div class="reviews-grid">
-            <div class="review-item">
-              <img src="img/quote-1.svg" alt="Big quotation" />
-              <p class="review-text">
-                "LeaderBoard has completely transformed the way I track my
-                progress. The insights are invaluable!"
-              </p>
-              <p class="review-author">- Alex Johnson</p>
-            </div>
-            <div class="review-item">
-              <img src="img/quote-1.svg" alt="Big quotation" />
-              <p class="review-text">
-                "I love the app! It's so easy to use and helps me stay motivated
-                to achieve my goals."
-              </p>
-              <p class="review-author">- Maria Garcia</p>
-            </div>
-            <div class="review-item">
-              <img src="img/quote-1.svg" alt="Big quotation" />
-              <p class="review-text">
-                "The ranking system is fantastic. It really pushes me to improve
-                and do better each day."
-              </p>
-              <p class="review-author">- Liam Smith</p>
-            </div>
-            <div class="review-item">
-              <img src="img/quote-1.svg" alt="Big quotation" />
-              <p class="review-text">
-                "A must-have for anyone serious about tracking their progress.
-                Highly recommend!"
-              </p>
-              <p class="review-author">- Emma Brown</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="newsletter">
-        <div class="newsletter-container">
-          <h2 class="newsletter-heading">Check your ranking now!</h2>
-          <a href="studentcheckpage.html" class="cta btn">Check Now</a>
-        </div>
-      </div>
+      </main>
       <footer id="footer">
-        <div class="footer-container">
+        <div class="section-container footer-container">
           <a href="index.html" class="logo-container">
             <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
@@ -209,7 +225,7 @@
             <a href="index.html#app" class="cta btn">Get the app</a>
           </div>
         </div>
-        <div class="footer-tac">
+        <div class="section-container footer-tac">
           <p class="footer-text">
             &copy; 2023 LeaderBoard. All rights reserved.
           </p>

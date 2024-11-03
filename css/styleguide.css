@@ -1,0 +1,52 @@
+/* Custom font */
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/61afa2540955d603f8d229bf/fonts/gilroy-regular.otf")
+    format("opentype");
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/609ba63c8be9f9a21fc21698/fonts/gilroy-medium.ttf")
+    format("truetype");
+  font-size: medium;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/609ba63c8be9f9a21fc21698/fonts/gilroy-semibold.ttf")
+    format("truetype");
+  font-size: bold;
+}
+/* Custom properties */
+:root {
+  --primary-color: #f4f4f4;
+  --secondary-color: #333333;
+  --tertiary-color: #f0f0f0;
+
+  --primary-accent-color: #faa94d;
+  --secondary-accent-color: #f8894b;
+
+  --darker-shade: #808080;
+  --lighter-shade: #9f9f9f;
+
+  --primary-text-color: var(--secondary-color);
+  --secondary-text-color: var(--primary-color);
+
+  --primary-bg-color: var(--primary-color);
+  --secondary-bg-color: var(--secondary-color);
+  --tertiary-bg-color: var(--tertiary-color);
+
+  --primary-bg: linear-gradient(
+    180deg,
+    var(--primary-accent-color),
+    var(--secondary-accent-color)
+  );
+
+  --secondary-bg: linear-gradient(
+    180deg,
+    var(--secondary-accent-color),
+    var(--primary-accent-color)
+  );
+}

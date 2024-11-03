@@ -3,73 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style-global.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>LeaderBoard - Student Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>LeaderBoard - Sign up</title>
   </head>
   <body>
     <div class="container">
       <header id="header">
-        <div class="header-container">
+        <div class="section-container header-container">
           <a href="index.html" class="logo-container logo-center">
             <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
         </div>
       </header>
-      <div id="hero">
-        <div class="hero-container">
-          <div class="hero-login">
-            <form class="login-container" action="#">
-              <div class="input-container">
-                <input
-                  type="text"
-                  id="student-id"
-                  name="student-id"
-                  placeholder="Student ID"
-                  required />
-              </div>
-              <div class="input-container">
-                <input
-                  type="number"
-                  id="phone-number"
-                  name="phone-number"
-                  placeholder="Phone No."
-                  required />
-              </div>
-              <div class="input-container">
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="Set Username"
-                  required />
-              </div>
-              <div class="input-container">
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Set Password"
-                  required />
-              </div>
-              <button class="btn login-btn" type="submit">
-                Create Account
-              </button>
-            </form>
-          </div>
-        </div>
-        <footer id="footer">
-          <div class="footer-tac">
-            <p class="footer-text">
-              &copy; 2023 LeaderBoard. All rights reserved.
-            </p>
-            <div class="tac-box">
-              <p class="tac-link">Terms and Conditions</p>
-              <p class="tac-link">Privacy Policy</p>
+      <main id="main">
+        <div id="hero">
+          <div class="section-container hero-container">
+            <div class="hero-main">
+              <form class="signup-container" action="login-student.html">
+                <div class="input-container">
+                  <input
+                    type="text"
+                    id="student-id"
+                    name="student-id"
+                    placeholder="Enter student ID"
+                    required />
+                </div>
+                <div class="input-container">
+                  <input
+                    type="number"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="Enter phone number"
+                    required />
+                </div>
+
+                <div class="input-container">
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Set username"
+                    required />
+                </div>
+                <div class="input-container">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Set password"
+                    required />
+                </div>
+                <button class="btn signup-btn" type="submit">Sign up</button>
+                <br />
+              </form>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="section-container footer-tac">
+          <p class="footer-text">
+            &copy; 2023 LeaderBoard. All rights reserved.
+          </p>
+          <div class="tac-box">
+            <p class="tac-link">Terms and Conditions</p>
+            <p class="tac-link">Privacy Policy</p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

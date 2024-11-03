@@ -3,31 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style-global.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>LeaderBoard - Blog</title>
-    <style>
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      p {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-      a {
-        text-decoration: none;
-        color: #007bff;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
-      <p>Coming Soon...</p>
-      <p><a href="index.html">Click here</a> to return to the home page.</p>
+      <header id="header">
+        <div class="section-container header-container">
+          <a href="index.html" class="logo-container">
+            <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
+          </a>
+          <div class="nav-container">
+            <ul class="nav">
+              <li class="nav-items">
+                <a href="index.html#hero" class="nav-links">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#features" class="nav-links">Features</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#app" class="nav-links">App</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#reviews" class="nav-links">Reviews</a>
+              </li>
+              <li class="nav-items">
+                <a href="blog.html" class="nav-links">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cta-container">
+            <a href="studentcheckpage.html" class="cta btn">Check Now</a>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <div id="hero">
+          <div class="section-container hero-container">
+            <div class="hero-main">
+              <h2 class="hero-title">Coming Soon...</h2>
+              <p>
+                <a class="underline" href="index.html">Click here</a>
+                to return to the home page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="section-container footer-container">
+          <a href="index.html" class="logo-container">
+            <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
+          </a>
+          <div class="nav-container">
+            <ul class="nav">
+              <li class="nav-items">
+                <a href="index.html#features" class="nav-links">Features</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#app" class="nav-links">App</a>
+              </li>
+              <li class="nav-items">
+                <a href="index.html#reviews" class="nav-links">Reviews</a>
+              </li>
+              <li class="nav-items">
+                <a href="blog.html#contact" class="nav-links">Contact</a>
+              </li>
+              <li class="nav-items">
+                <a href="blog.html#support" class="nav-links">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cta-container">
+            <a href="index.html#app" class="cta btn">Get the app</a>
+          </div>
+        </div>
+        <div class="section-container footer-tac">
+          <p class="footer-text">
+            &copy; 2023 LeaderBoard. All rights reserved.
+          </p>
+          <div class="tac-box">
+            <a href="blog.html" class="tac-link">Terms and Conditions</a>
+            <a href="blog.html" class="tac-link">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

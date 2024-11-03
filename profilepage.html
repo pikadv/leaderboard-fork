@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style-global.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="prefetch" href="img/background.svg" />
+    <link rel="stylesheet" href="style.css" />
     <title>LeaderBoard - Profile Page</title>
   </head>
   <body>
     <div class="container">
       <header id="header">
-        <div class="header-container">
+        <div class="section-container header-container">
           <a href="index.html" class="logo-container">
             <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
@@ -21,15 +19,45 @@
         </div>
       </header>
       <div id="hero">
-        <div class="hero-container">
-          <div class="profile-container">
-            <img src="/img/card-section.svg" alt="" />
-            <a class="btn btn-back" href="/studentcheckpage.html">Go back</a>
+        <div class="section-container hero-container">
+          <div class="hero-main">
+            <div class="profile-container">
+              <img
+                class="profile-picture"
+                src="https://loremflickr.com/cache/resized/1637_24026115956_bfff77f6a0_m_240_240_nofilter.jpg"
+                alt="Random Profile Image" />
+              <div class="profile-details">
+                <p class="profile-item">
+                  <span>Name:</span>
+                  <span> Daisy Delilah </span>
+                </p>
+                <p class="profile-item">
+                  <span>ID:</span>
+                  <span> 123-12-1234 </span>
+                </p>
+                <p class="profile-item">
+                  <span>Section:</span>
+                  <span> 61_O </span>
+                </p>
+                <p class="profile-item">
+                  <span>Semester:</span> <span> 6th </span>
+                </p>
+                <p class="profile-item"><span>Rank:</span> <span> 1 </span></p>
+                <p class="profile-item">
+                  <span>Position:</span>
+                  <span> 1<span class="small-text">/2000</span> </span>
+                </p>
+                <p class="profile-item">
+                  <span>Department:</span> <span> CSE </span>
+                </p>
+              </div>
+            </div>
+            <a class="btn btn-light" href="/studentcheckpage.html">Go back</a>
           </div>
         </div>
       </div>
       <footer id="footer">
-        <div class="footer-container">
+        <div class="section-container footer-container">
           <a href="index.html" class="logo-container">
             <img class="logo-img" src="img/logo-1.png" alt="LeaderBoard Logo" />
           </a>
@@ -56,7 +84,7 @@
             <a href="index.html#app" class="cta btn">Get the app</a>
           </div>
         </div>
-        <div class="footer-tac">
+        <div class="section-container footer-tac">
           <p class="footer-text">
             &copy; 2023 LeaderBoard. All rights reserved.
           </p>
