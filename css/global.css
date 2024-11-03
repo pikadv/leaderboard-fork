@@ -86,6 +86,7 @@ body {
 .section-container {
   display: flex;
   width: 80%;
+  min-width: 900px;
   max-width: 1400px;
   margin: 0 auto;
 }
