@@ -31,12 +31,14 @@
   --darker-shade: #808080;
   --lighter-shade: #9f9f9f;
 
-  --primary-text-color: var(--secondary-color);
-  --secondary-text-color: var(--primary-color);
+  --card-bg-color: var(#fff8f8);
 
   --primary-bg-color: var(--primary-color);
   --secondary-bg-color: var(--secondary-color);
   --tertiary-bg-color: var(--tertiary-color);
+
+  --primary-text-color: var(--secondary-color);
+  --secondary-text-color: var(--primary-color);
 
   --primary-bg: linear-gradient(
     180deg,
