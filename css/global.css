@@ -89,6 +89,7 @@ body {
   max-width: 1400px;
   min-width: min-content;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Header & Footer Nav */
