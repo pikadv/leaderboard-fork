@@ -125,10 +125,13 @@
 }
 
 .app-box {
-  width: 25rem;
-  min-width: 25rem;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.app-section-logo img {
+  width: 25rem;
 }
 
 .app-section-dark {
@@ -182,8 +185,8 @@
 }
 
 .reviews-grid {
+  justify-content: center;
   gap: 2rem;
-  margin: 0 auto;
 }
 
 .review-item {
