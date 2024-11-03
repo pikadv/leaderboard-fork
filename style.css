@@ -352,14 +352,20 @@
 }
 
 .ranking-header {
+  width: 100%;
   justify-content: space-between;
   padding: 1rem;
   font-weight: bold;
   font-size: 1.25rem;
 }
 
+.back-frame-container {
+  align-self: start;
+}
+
 .ranking-input-section,
 .form-input-section {
+  width: 80%;
   flex-direction: column;
 }
 
@@ -391,11 +397,10 @@
 
 /* Ranking LeaderBoard */
 .leaderboard-container {
-  width: 100%;
-  align-items: start;
+  width: 80%;
   gap: 0;
+  align-items: start;
   margin-bottom: 2rem;
-  max-width: 80%;
 }
 
 .ranking-main {
