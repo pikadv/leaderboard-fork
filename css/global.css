@@ -4,10 +4,6 @@ h2 {
   font-weight: bold;
 }
 
-.small-text {
-  font-size: smaller;
-}
-
 .underline {
   border-bottom: var(--lighter-shade) 1px solid;
 }
